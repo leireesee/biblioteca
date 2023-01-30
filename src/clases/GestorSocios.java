@@ -11,25 +11,17 @@ import java.util.Scanner;
 				opcion_menu = Integer.parseInt(scan.nextLine());
 				
 				switch (opcion_menu) {
-				case 1:
-					System.out.println("Has elegido insertar libro");
+				case Menu.VER_SOCIOS:
+					System.out.println("Has elegido ver socios");
 					
 					break;
-				case 2:
-					System.out.println("Has elegido eliminar libro");
-					
-					break;
-				case 3:
-					System.out.println("Has elegido ver libros");
-					
-					break;
-				case 0:
+				case Menu.SALIR:
 					System.out.println("ADIOS");
 					break;
 				default:
 					System.out.println("Opcion incorrecta!");
 				}
 	
-			} while (opcion_menu != SALIR);
+			} while (opcion_menu != Menu.SALIR);
 		}
 }
